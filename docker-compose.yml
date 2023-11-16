@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nestjs-app:
+    image: s3-pdf-ms:latest
+    ports:
+      - "8081:8081"
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  app-data:
